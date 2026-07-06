@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>William Cazimoto — Web Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== NAV — barra de separadores ao estilo editor ===================== -->
+<header class="editor-topbar">
+  <div class="topbar-left">
+    <span class="logo-dot"></span>
+    <span class="logo-text">william<strong>.dev</strong></span>
+  </div>
+
+  <nav class="tabs" id="mainNav">
+    <a href="#home" class="tab active" data-tab="index.html">index.html</a>
+    <a href="#sobre" class="tab" data-tab="sobre.js">sobre.js</a>
+    <a href="#projetos" class="tab" data-tab="projetos.js">projetos.js</a>
+    <a href="#servicos" class="tab" data-tab="servicos.js">servicos.js</a>
+    <a href="#contacto" class="tab" data-tab="contacto.js">contacto.js</a>
+  </nav>
+
+  <div class="topbar-right">
+    <button class="btn btn-ghost" id="openLoginBtn">Entrar</button>
+    <button class="btn btn-menu" id="menuToggle" aria-label="Abrir menu">☰</button>
+  </div>
+</header>
+
+<!-- ===================== HERO — janela de editor com código a "digitar" ===================== -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">// desenvolvedor web · frontend &amp; backend</p>
+    <h1>William <span class="accent">Cazimoto</span></h1>
+    <p class="hero-sub">Construo interfaces rápidas e sistemas robustos — do primeiro pixel à última linha de API. Baseado em Moçambique, a trabalhar com clientes em todo o lado.</p>
+    <div class="hero-actions">
+      <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+      <a href="#contacto" class="btn btn-outline">Contratar-me</a>
+    </div>
+    <div class="hero-social">
+      <a href="mailto:william.cazimoto@example.com" class="social-link" title="Email" data-social="email">
+        <svg viewBox="0 0 24 24"><path d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6Zm2 0 8 6 8-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="https://wa.me/258840000000" target="_blank" rel="noopener" class="social-link" title="WhatsApp" data-social="whatsapp">
+        <svg viewBox="0 0 24 24"><path d="M20.5 3.5a10.4 10.4 0 0 0-16.9 12L2 21l5.7-1.5A10.4 10.4 0 0 0 20.5 3.5Z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8.3 8.7c.2-.6.7-1.6 1-1.7.3-.1.9 0 1.2.5.4.6 1.1 2 1.2 2.2.1.2.1.5 0 .7-.2.3-.3.5-.5.7-.2.2-.4.4-.2.8.3.5 1 1.4 2 2.1 1 .8 1.6 1 1.9 1.1.3.1.5.1.7-.1.2-.3.9-1 1.1-1.3.2-.3.4-.3.8-.1.3.1 2 1 2.3 1.1.3.2.5.2.6.4.1.2.1 1.1-.3 2-.4.9-2.1 1.6-2.9 1.7-.7.1-1.6.2-5-1.2-4.1-1.7-6.7-5.8-6.9-6.1-.2-.3-1.6-2.1-1.6-4 0-1.9 1-2.8 1.3-3.2Z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://facebook.com/williamcazimoto" target="_blank" rel="noopener" class="social-link" title="Facebook" data-social="facebook">
+        <svg viewBox="0 0 24 24"><path d="M14 9V6.5c0-.6.4-1 1-1h2V2h-3c-2.2 0-4 1.8-4 4v3H8v3.5h2V22h3.5v-9.5H16l.7-3.5H14Z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-editor" id="heroEditor">
+    <div class="editor-window">
+      <div class="editor-chrome">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="editor-filename">sobre-mim.js</span>
+      </div>
+      <pre class="editor-body"><code><span class="ln">1</span><span class="tok-kw">const</span> <span class="tok-var">dev</span> = {<br><span class="ln">2</span>&nbsp;&nbsp;<span class="tok-prop">nome</span>: <span class="tok-str">"William Cazimoto"</span>,<br><span class="ln">3</span>&nbsp;&nbsp;<span class="tok-prop">papel</span>: <span class="tok-str">"Full-stack Developer"</span>,<br><span class="ln">4</span>&nbsp;&nbsp;<span class="tok-prop">stack</span>: [<span class="tok-str">"React"</span>, <span class="tok-str">"Node.js"</span>, <span class="tok-str">"PHP"</span>],<br><span class="ln">5</span>&nbsp;&nbsp;<span class="tok-prop">pagamentos</span>: <span class="tok-str">"M-Pesa"</span>,<br><span class="ln">6</span>&nbsp;&nbsp;<span class="tok-prop">disponivel</span>: <span id="typeCursor" class="tok-bool">true</span><br><span class="ln">7</span>};</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE / SKILLS ===================== -->
+<section id="sobre" class="section">
+  <p class="section-eyebrow">// sobre.js</p>
+  <h2 class="section-title">Duas camadas, um só ofício</h2>
+  <p class="section-lead">Trabalho nas duas pontas da aplicação — a interface que a pessoa toca, e o servidor que sustenta tudo por trás.</p>
+
+  <div class="skills-grid">
+    <div class="skill-card">
+      <span class="skill-tag">frontend/</span>
+      <h3>Interface &amp; experiência</h3>
+      <ul class="skill-list">
+        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+        <li>React &amp; Vue</li>
+        <li>Design responsivo mobile-first</li>
+        <li>Acessibilidade e performance</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <span class="skill-tag">backend/</span>
+      <h3>Servidor &amp; dados</h3>
+      <ul class="skill-list">
+        <li>Node.js, Express, PHP</li>
+        <li>MySQL, MongoDB, PostgreSQL</li>
+        <li>APIs REST &amp; autenticação</li>
+        <li>Integração de pagamentos (M-Pesa)</li>
+      </ul>
+    </div>
+    <div class="skill-card">
+      <span class="skill-tag">ferramentas/</span>
+      <h3>Fluxo de trabalho</h3>
+      <ul class="skill-list">
+        <li>Git &amp; GitHub</li>
+        <li>Docker</li>
+        <li>Testes automatizados</li>
+        <li>Deploy &amp; CI/CD</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJETOS ===================== -->
+<section id="projetos" class="section section-alt">
+  <p class="section-eyebrow">// projetos.js</p>
+  <h2 class="section-title">Trabalhos recentes</h2>
+
+  <div class="projects-grid">
+    <article class="project-card">
+      <div class="project-thumb" style="--from:#3A2E1F; --to:#1B1F23;">🛒</div>
+      <div class="project-info">
+        <h3>Loja Online com M-Pesa</h3>
+        <p>E-commerce completo com carrinho, painel de admin e pagamento integrado via M-Pesa.</p>
+        <div class="project-tags"><span>React</span><span>Node.js</span><span>M-Pesa API</span></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-thumb" style="--from:#1F3A34; --to:#1B1F23;">📊</div>
+      <div class="project-info">
+        <h3>Painel de Gestão Escolar</h3>
+        <p>Sistema web para gestão de alunos, notas e propinas, com autenticação por perfil.</p>
+        <div class="project-tags"><span>Vue</span><span>PHP</span><span>MySQL</span></div>
+      </div>
+    </article>
+    <article class="project-card">
+      <div class="project-thumb" style="--from:#3A1F2E; --to:#1B1F23;">💬</div>
+      <div class="project-info">
+        <h3>App de Reservas + WhatsApp</h3>
+        <p>Sistema de marcações com notificações automáticas via WhatsApp e email.</p>
+        <div class="project-tags"><span>JavaScript</span><span>Express</span><span>API WhatsApp</span></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ===================== SERVIÇOS / PAGAMENTO M-PESA ===================== -->
+<section id="servicos" class="section">
+  <p class="section-eyebrow">// servicos.js</p>
+  <h2 class="section-title">Serviços &amp; orçamento rápido</h2>
+  <p class="section-lead">Escolhe um pacote e reserva o teu projeto pagando o sinal diretamente por M-Pesa.</p>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Site institucional</h3>
+      <p class="price">15.000 MT</p>
+      <p class="service-desc">Site responsivo de até 5 páginas, formulário de contacto e otimização básica.</p>
+      <button class="btn btn-mpesa" data-plan="Site institucional" data-price="15000">Pagar sinal — M-Pesa</button>
+    </div>
+    <div class="service-card featured">
+      <span class="service-badge">Mais popular</span>
+      <h3>Loja online</h3>
+      <p class="price">35.000 MT</p>
+      <p class="service-desc">E-commerce completo com carrinho, painel de admin e pagamento M-Pesa integrado.</p>
+      <button class="btn btn-mpesa" data-plan="Loja online" data-price="35000">Pagar sinal — M-Pesa</button>
+    </div>
+    <div class="service-card">
+      <h3>Sistema à medida</h3>
+      <p class="price">a combinar</p>
+      <p class="service-desc">Plataforma web personalizada: backend, base de dados e integrações específicas.</p>
+      <button class="btn btn-mpesa" data-plan="Sistema à medida" data-price="0">Pedir orçamento</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" class="section section-alt contact-section">
+  <p class="section-eyebrow">// contacto.js</p>
+  <h2 class="section-title">Vamos construir algo</h2>
+  <p class="section-lead">Escreve, chama ou manda mensagem — respondo o mais rápido possível.</p>
+
+  <div class="contact-grid">
+    <a class="contact-card" href="mailto:william.cazimoto@example.com">
+      <span class="contact-icon">✉️</span>
+      <span class="contact-label">Email</span>
+      <span class="contact-value">william.cazimoto@example.com</span>
+    </a>
+    <a class="contact-card" href="https://wa.me/258840000000" target="_blank" rel="noopener">
+      <span class="contact-icon">💬</span>
+      <span class="contact-label">WhatsApp</span>
+      <span class="contact-value">+258 84 000 0000</span>
+    </a>
+    <a class="contact-card" href="https://facebook.com/williamcazimoto" target="_blank" rel="noopener">
+      <span class="contact-icon">📘</span>
+      <span class="contact-label">Facebook</span>
+      <span class="contact-value">/williamcazimoto</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> William Cazimoto — feito à mão, linha a linha.</p>
+</footer>
+
+<!-- ===================== MODAL: LOGIN ===================== -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <span>login.js</span>
+      <button class="modal-close" data-close="loginModal">✕</button>
+    </div>
+    <form id="loginForm" class="modal-form">
+      <label>Email
+        <input type="email" required placeholder="tu@email.com">
+      </label>
+      <label>Palavra-passe
+        <input type="password" required placeholder="••••••••">
+      </label>
+      <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+      <p class="modal-note">Área de acesso reservada. Este formulário é uma demonstração de interface — para autenticação real é necessário ligar a um backend seguro.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ===================== MODAL: PAGAMENTO M-PESA ===================== -->
+<div class="modal-overlay" id="mpesaModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <span>pagamento-mpesa.js</span>
+      <button class="modal-close" data-close="mpesaModal">✕</button>
+    </div>
+    <form id="mpesaForm" class="modal-form">
+      <p class="mpesa-plan-label">Plano selecionado: <strong id="mpesaPlanName">—</strong></p>
+      <label>Número M-Pesa
+        <input type="tel" id="mpesaPhone" required placeholder="84 ou 85 XXX XXXX">
+      </label>
+      <label>Valor a pagar (MT)
+        <input type="number" id="mpesaAmount" required min="1">
+      </label>
+      <button type="submit" class="btn btn-mpesa btn-block" id="mpesaSubmitBtn">Confirmar pagamento</button>
+      <div class="mpesa-status" id="mpesaStatus"></div>
+      <p class="modal-note">Simulação de plugin de pagamento. Para processar pagamentos M-Pesa reais é necessário um servidor backend com credenciais da API oficial (Vodacom/Safaricom).</p>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
